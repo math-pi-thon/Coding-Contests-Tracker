@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  width: 480px;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+}
+
+#no-contests {
+  margin-top: 20px;
+  color: #EE4E4E;
+  font-size: 1.2em;
+}
+
+.contest {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.contest:hover {
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+
+.contest-logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.contest-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contest-name:hover {
+  text-decoration: underline;
+}
+
+.contest-details div {
+  font-size: 0.9em;
+  color: #555555;
+}
+
+add-to-calendar-button {
+  margin-top: 10px;
+}
