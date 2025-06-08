@@ -72,11 +72,12 @@ document.addEventListener('DOMContentLoaded', function() {
       apiUrl += `&start__lte=${now}&end__gt=${now}`;
     }
 
-    apiUrl += `&resource=codeforces.com,codechef.com,atcoder.jp,leetcode.com`;
+    apiUrl += `&resource__in=codeforces.com,codechef.com,atcoder.jp,leetcode.com`;
 
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
+        // console.log(data); // Log API response
         fetchedContests = data.objects.sort((a, b) => new Date(a.start) - new Date(b.start));
         displayContests();
       })
